@@ -28,8 +28,7 @@ for creating new column following DAX expression was written;
     customer_detail[Customer_Age]>=40 && 'customer_detail'[Customer_Age]<50,"40-50",
     customer_detail[Customer_Age]>=50 && 'customer_detail'[Customer_Age]<60,"50-60",
     customer_detail[Customer_Age]>=60,"60+",
-    "unknown"
-)
+    "unknown")
         
 Snap of new calculated column ,
 
