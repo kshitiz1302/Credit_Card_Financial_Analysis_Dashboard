@@ -39,13 +39,7 @@ Snap of new calculated column ,
 - Step 9 :Calculated column was created in which, customers were grouped into three income groups
 Following DAX expression was written for the same,
         
-        Income Group = SWITCH(
-    TRUE(),
-    customer_detail[Income]<35000,"Low Income",
-    customer_detail[Income]>=35000 && customer_detail[Income]<70000,"Med Income",
-    customer_detail[Income]>=70000,"High Income",
-    "unknown"
-)
+        Income Group = SWITCH(TRUE(),customer_detail[Income]<35000,"Low Income",customer_detail[Income]>=35000 && customer_detail[Income]<70000,"Med Income",customer_detail[Income]>=70000,"High Income","unknown)
         
 Snap of new calculated column
 
