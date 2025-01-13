@@ -40,11 +40,12 @@ Snap of new calculated column ,
 Following DAX expression was written for the same,
 
          Income Group = SWITCH(
-      TRUE(),customer_detail[Income]<35000,"Low Income",
+      TRUE(),
+      customer_detail[Income]<35000,"Low Income",
       customer_detail[Income]>=35000 && customer_detail[Income]<70000,
       "Med Income",customer_detail[Income]>=70000,
       "High Income",
-      "unknown
+      "unknown"
       )
         
         
